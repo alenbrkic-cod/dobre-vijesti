@@ -360,7 +360,7 @@ export default function App({ appId, token }) {
       classified
         .filter((it) => it.label === 'positive')
         .filter((it) => filter === 'all' || it.source === filter)
-        .sort((a, b) => (b.score || 0) - (a.score || 0) || b.time - a.time),
+        .sort((a, b) => (b.time || 0) - (a.time || 0) || (b.score || 0) - (a.score || 0)),
     [classified, filter],
   )
 
