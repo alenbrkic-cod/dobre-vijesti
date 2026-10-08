@@ -1,0 +1,27 @@
+{
+  "id": "dobre-vijesti",
+  "name": "PoziNews",
+  "version": "0.1.0",
+  "description": "Samo pozitivne vijesti iz bh. portala, uz udio dobrih vijesti u ukupnom toku.",
+  "entry": "index.jsx",
+  "icon": "icon.png",
+  "offline_capable": false,
+  "permissions": {},
+  "source_files": [],
+  "store": {
+    "tagline": "Samo pozitivne vijesti iz bh. portala, uz udio dobrih vijesti u ukupnom toku.",
+    "description": "PoziNews prikuplja naslove sa bosanskohercegovačkih portala (Klix, Avaz, N1, Radiosarajevo), ocjenjuje svaki naslov rječnikom pozitivnih i negativnih riječi i prikazuje samo dobre vijesti.\n\nMjerač pozitivnosti pokazuje koliki je udio svih dohvaćenih vijesti zaista pozitivan — u odnosu na neutralne ili negativne. Tri razine strogosti (Strogo, Uravnoteženo, Široko) određuju koliko jak pozitivan signal je potreban, a filteri po izvoru pomažu da pratite omiljene portale.\n\nNapomena: ocjena sentimenta je heuristika zasnovana na ključnim riječima, a ne jezični model — stoga će poneka vijest biti pogrešno svrstana.",
+    "screenshots": [
+      {
+        "src": "static/store/screenshot-light.png",
+        "label": "Pregled dobrih vijesti",
+        "alt": "Početni ekran aplikacije PoziNews sa mjeračem pozitivnosti, kontrolom strogosti filtera i karticama pozitivnih vijesti sa bh. portala."
+      },
+      {
+        "src": "static/store/screenshot-dark.png",
+        "label": "Tamna tema",
+        "alt": "PoziNews u tamnoj temi — isti pregled pozitivnih vijesti i mjerač udjela dobrih vijesti u ukupnom toku."
+      }
+    ]
+  }
+}
